@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Quote, Star } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -12,7 +11,7 @@ export const ProvaSocial = () => {
       profissao: "Professora",
       depoimento: "Finalmente consegui! Eram 4 anos tentando ter plantas e matando todas. Em 15 dias já estava com 3 plantinhas lindas na sala.",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1494790108755-2616b612b796?w=400&h=400&fit=crop&crop=face"
+      foto: "https://i.imgur.com/IfEH6c6.jpeg"
     },
     {
       nome: "Carlos Mendes",
@@ -48,7 +47,7 @@ export const ProvaSocial = () => {
       profissao: "Advogada",
       depoimento: "Trabalho 12h por dia e consegui manter minhas plantas lindas. O segredo está nas técnicas práticas que funcionam mesmo com pouco tempo.",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
+      foto: "https://i.imgur.com/IvjuiNI.jpeg"
     },
     {
       nome: "Pedro Oliveira",
@@ -57,7 +56,7 @@ export const ProvaSocial = () => {
       profissao: "Médico",
       depoimento: "Como médico, posso confirmar: ter plantas em casa realmente melhora a qualidade do ar e reduz o estresse. E agora sei como cuidar delas!",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face"
+      foto: "https://i.imgur.com/k4p3V0n.jpeg"
     }
   ];
 
