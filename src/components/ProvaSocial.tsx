@@ -1,6 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { Quote, Star } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const ProvaSocial = () => {
   const depoimentos = [
@@ -10,7 +11,8 @@ export const ProvaSocial = () => {
       cidade: "São Paulo",
       profissao: "Professora",
       depoimento: "Finalmente consegui! Eram 4 anos tentando ter plantas e matando todas. Em 15 dias já estava com 3 plantinhas lindas na sala.",
-      nota: 5
+      nota: 5,
+      foto: "/placeholder.svg"
     },
     {
       nome: "Carlos Mendes",
@@ -18,7 +20,8 @@ export const ProvaSocial = () => {
       cidade: "Rio de Janeiro",
       profissao: "Contador",
       depoimento: "Minha esposa não acreditou quando viu meu cantinho verde no home office. Agora sou eu quem cuida das plantas da casa!",
-      nota: 5
+      nota: 5,
+      foto: "/placeholder.svg"
     },
     {
       nome: "Ana Beatriz",
@@ -26,7 +29,35 @@ export const ProvaSocial = () => {
       cidade: "Belo Horizonte",
       profissao: "Designer",
       depoimento: "Apartamento pequeno não é desculpa! Tenho 6 plantas lindas e gastei menos de R$ 100. Minha casa virou outra coisa.",
-      nota: 5
+      nota: 5,
+      foto: "/placeholder.svg"
+    },
+    {
+      nome: "Roberto Santos",
+      idade: "38 anos",
+      cidade: "Porto Alegre",
+      profissao: "Engenheiro",
+      depoimento: "Sempre achei que era difícil demais. O método é tão simples que meu filho de 8 anos me ajuda a cuidar das plantas!",
+      nota: 5,
+      foto: "/placeholder.svg"
+    },
+    {
+      nome: "Juliana Costa",
+      idade: "29 anos",
+      cidade: "Brasília",
+      profissao: "Advogada",
+      depoimento: "Trabalho 12h por dia e consegui manter minhas plantas lindas. O segredo está nas técnicas práticas que funcionam mesmo com pouco tempo.",
+      nota: 5,
+      foto: "/placeholder.svg"
+    },
+    {
+      nome: "Pedro Oliveira",
+      idade: "35 anos",
+      cidade: "Salvador",
+      profissao: "Médico",
+      depoimento: "Como médico, posso confirmar: ter plantas em casa realmente melhora a qualidade do ar e reduz o estresse. E agora sei como cuidar delas!",
+      nota: 5,
+      foto: "/placeholder.svg"
     }
   ];
 
@@ -42,7 +73,7 @@ export const ProvaSocial = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {depoimentos.map((depoimento, index) => (
             <Card key={index} className="p-6 bg-white border-2 border-verde-200 hover:shadow-xl transition-all duration-300 animate-fade-in hover:border-terracota-300" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="mb-4">
@@ -59,8 +90,18 @@ export const ProvaSocial = () => {
               </div>
 
               <div className="border-t border-natural-200 pt-4">
-                <h4 className="font-bold text-gray-800 text-lg">{depoimento.nome}</h4>
-                <p className="text-sm text-gray-600">{depoimento.idade} • {depoimento.cidade}</p>
+                <div className="flex items-center gap-3 mb-2">
+                  <Avatar className="w-12 h-12">
+                    <AvatarImage src={depoimento.foto} alt={depoimento.nome} />
+                    <AvatarFallback className="bg-verde-100 text-verde-700 font-bold">
+                      {depoimento.nome.split(' ').map(n => n[0]).join('')}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <h4 className="font-bold text-gray-800 text-lg">{depoimento.nome}</h4>
+                    <p className="text-sm text-gray-600">{depoimento.idade} • {depoimento.cidade}</p>
+                  </div>
+                </div>
                 <p className="text-sm text-terracota-600 font-medium">{depoimento.profissao}</p>
               </div>
             </Card>

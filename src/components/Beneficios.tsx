@@ -28,6 +28,11 @@ export const Beneficios = () => {
       emoji: "✨",
       titulo: "Sua casa mais viva, leve e inspiradora",
       descricao: "Sinta a diferença no ambiente e no seu bem-estar todos os dias"
+    },
+    {
+      emoji: "🌱",
+      titulo: "As plantas trazem saúde para toda a casa",
+      descricao: "Você, sua família e até seus pets mais saudáveis e cheios de energia positiva"
     }
   ];
 

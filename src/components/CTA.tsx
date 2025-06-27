@@ -34,7 +34,11 @@ export const CTA = () => {
             </h3>
             
             <div className="bg-terracota-50 border-4 border-terracota-200 rounded-2xl p-8 mb-8">
-              <div className="text-gray-600 text-lg mb-2">De R$ 47,00 por apenas:</div>
+              <div className="text-gray-600 text-lg mb-2 flex items-center justify-center gap-2">
+                <span>De</span>
+                <span className="text-2xl font-bold text-gray-500 line-through">R$ 47,00</span>
+                <span>por apenas:</span>
+              </div>
               <div className="text-6xl md:text-7xl font-bold text-terracota-600 mb-4">
                 R$ 9,90
               </div>
@@ -68,7 +72,7 @@ export const CTA = () => {
               </div>
               <div className="flex items-center gap-2 text-verde-700">
                 <span className="text-lg">📩</span>
-                <span className="font-medium">Acesso imediato</span>
+                <span className="font-medium">Acesso por e-mail</span>
               </div>
               <div className="flex items-center gap-2 text-verde-700">
                 <span className="text-lg">💚</span>
