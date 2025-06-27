@@ -4,32 +4,32 @@ export const Galeria = () => {
     {
       titulo: "Sala aconchegante",
       descricao: "Plantas que trazem vida sem ocupar muito espaço",
-      emoji: "🛋️"
+      imagem: "https://i.imgur.com/SZKfmho.png"
     },
     {
       titulo: "Quarto relaxante", 
       descricao: "Espécies que purificam o ar enquanto você dorme",
-      emoji: "🛏️"
+      imagem: "https://i.imgur.com/IJmJ0d1.jpeg"
     },
     {
       titulo: "Cozinha funcional",
       descricao: "Ervas e plantas que resistem ao vapor e calor",
-      emoji: "👩‍🍳"
+      imagem: "https://i.imgur.com/KuMFZry.jpeg"
     },
     {
       titulo: "Banheiro verde",
       descricao: "Plantas que adoram umidade e pouca luz",
-      emoji: "🚿"
+      imagem: "https://i.imgur.com/w7BFDda.jpeg"
     },
     {
       titulo: "Home office produtivo",
       descricao: "Plantas que melhoram a concentração",
-      emoji: "💻"
+      imagem: "https://i.imgur.com/F7BfCoi.jpeg"
     },
     {
       titulo: "Varanda pequena",
       descricao: "Aproveitando cada cantinho com plantas lindas",
-      emoji: "🌅"
+      imagem: "https://i.imgur.com/tv1Krbw.jpeg"
     }
   ];
 
@@ -48,11 +48,15 @@ export const Galeria = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ambientes.map((ambiente, index) => (
             <div key={index} className="group cursor-pointer animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="bg-gradient-to-br from-verde-100 to-terracota-50 rounded-2xl p-8 h-48 flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 border-2 border-verde-200 group-hover:border-terracota-300">
-                <div className="text-center">
-                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
-                    {ambiente.emoji}
-                  </div>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-verde-200 group-hover:border-terracota-300">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={ambiente.imagem} 
+                    alt={ambiente.titulo}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">
                     {ambiente.titulo}
                   </h3>
