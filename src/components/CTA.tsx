@@ -11,6 +11,10 @@ export const CTA = () => {
     "Resultados em até 30 dias"
   ];
 
+  const handleCheckout = () => {
+    window.open('https://www.ggcheckout.com/checkout/v2/Cz1YbICfOE3Wi8XjsraU', '_blank');
+  };
+
   return (
     <section id="oferta" className="py-16 px-4 bg-gradient-to-b from-verde-50 to-terracota-50">
       <div className="max-w-4xl mx-auto">
@@ -58,6 +62,7 @@ export const CTA = () => {
 
             <div className="space-y-4 mb-8">
               <Button 
+                onClick={handleCheckout}
                 className="bg-terracota-500 hover:bg-terracota-600 text-white px-12 py-6 text-2xl font-bold rounded-full shadow-xl transform hover:scale-105 transition-all duration-200 w-full"
                 size="lg"
               >
