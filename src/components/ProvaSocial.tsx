@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Quote, Star } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -11,7 +12,7 @@ export const ProvaSocial = () => {
       profissao: "Professora",
       depoimento: "Finalmente consegui! Eram 4 anos tentando ter plantas e matando todas. Em 15 dias já estava com 3 plantinhas lindas na sala.",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=400&fit=crop&crop=face"
+      foto: "https://images.unsplash.com/photo-1494790108755-2616b612b796?w=400&h=400&fit=crop&crop=face"
     },
     {
       nome: "Carlos Mendes",
@@ -20,7 +21,7 @@ export const ProvaSocial = () => {
       profissao: "Contador",
       depoimento: "Minha esposa não acreditou quando viu meu cantinho verde no home office. Agora sou eu quem cuida das plantas da casa!",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=400&fit=crop&crop=face"
+      foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
     },
     {
       nome: "Ana Beatriz",
@@ -29,7 +30,7 @@ export const ProvaSocial = () => {
       profissao: "Designer",
       depoimento: "Apartamento pequeno não é desculpa! Tenho 6 plantas lindas e gastei menos de R$ 100. Minha casa virou outra coisa.",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400&h=400&fit=crop&crop=face"
+      foto: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
     },
     {
       nome: "Roberto Santos",
@@ -38,7 +39,7 @@ export const ProvaSocial = () => {
       profissao: "Engenheiro",
       depoimento: "Sempre achei que era difícil demais. O método é tão simples que meu filho de 8 anos me ajuda a cuidar das plantas!",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+      foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
     },
     {
       nome: "Juliana Costa",
@@ -47,7 +48,7 @@ export const ProvaSocial = () => {
       profissao: "Advogada",
       depoimento: "Trabalho 12h por dia e consegui manter minhas plantas lindas. O segredo está nas técnicas práticas que funcionam mesmo com pouco tempo.",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1494790108755-2616b612b796?w=400&h=400&fit=crop&crop=face"
+      foto: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
     },
     {
       nome: "Pedro Oliveira",
@@ -56,7 +57,7 @@ export const ProvaSocial = () => {
       profissao: "Médico",
       depoimento: "Como médico, posso confirmar: ter plantas em casa realmente melhora a qualidade do ar e reduz o estresse. E agora sei como cuidar delas!",
       nota: 5,
-      foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+      foto: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face"
     }
   ];
 
