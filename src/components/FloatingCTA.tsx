@@ -28,13 +28,13 @@ export const FloatingCTA = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
+    <div className="fixed bottom-4 left-2 right-2 z-50 md:hidden">
       <Button 
         onClick={scrollToOffer}
-        className="w-full bg-terracota-500 hover:bg-terracota-600 text-white font-bold py-4 rounded-full shadow-2xl animate-pulse"
+        className="w-full bg-terracota-500 hover:bg-terracota-600 text-white font-bold py-3 sm:py-4 rounded-full shadow-2xl animate-pulse text-sm sm:text-base"
         size="lg"
       >
-        🌿 Quero minhas plantas vivas - R$ 9,90
+        <span className="leading-tight">🌿 Quero minhas plantas vivas - R$ 9,90</span>
       </Button>
     </div>
   );
