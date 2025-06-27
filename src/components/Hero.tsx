@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 
@@ -9,8 +8,17 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-16 bg-gradient-to-b from-natural-50 to-verde-50">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
+    <section 
+      className="min-h-screen flex items-center justify-center px-4 py-16 relative"
+      style={{
+        backgroundImage: 'url(https://i.imgur.com/feVQLQd.jpeg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="max-w-4xl mx-auto text-center animate-fade-in relative z-10">
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl font-bold text-verde-800 mb-6 leading-tight">
             Método Casa Viva
@@ -25,7 +33,7 @@ export const Hero = () => {
           </p>
         </div>
 
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-8 shadow-lg border border-natural-200">
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 mb-8 shadow-lg border border-natural-200">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
             <div className="flex items-center gap-2 text-verde-700">
               <CheckCircle className="w-5 h-5" />
