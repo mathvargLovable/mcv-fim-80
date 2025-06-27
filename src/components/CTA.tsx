@@ -6,100 +6,88 @@ import { CheckCircle, Clock, Shield, Star } from "lucide-react";
 export const CTA = () => {
   const diferenciais = [
     "Método 100% visual e prático",
-    "Ideal para quem está começando",
-    "Linguagem leve e acessível",
-    "Cabe no tempo e bolso da maioria"
+    "Ideal para quem nunca teve plantas",
+    "Funciona mesmo com pouco tempo",
+    "Resultados em até 30 dias"
   ];
 
   return (
     <section id="oferta" className="py-16 px-4 bg-gradient-to-b from-verde-50 to-terracota-50">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-verde-800 mb-4">
+        <div className="text-center mb-8">
+          <div className="bg-terracota-500 text-white px-6 py-3 rounded-full inline-block mb-6">
+            <span className="font-bold text-lg">⏰ Válido para os primeiros 200 alunos</span>
+          </div>
+          
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
             Transforme sua casa hoje mesmo
           </h2>
-          <p className="text-xl text-natural-600 max-w-2xl mx-auto">
-            Não espere mais para ter a casa dos seus sonhos, cheia de plantas vivas e lindas
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Sua casa mais viva, linda e acolhedora está a apenas um clique de distância
           </p>
         </div>
 
-        <Card className="p-8 md:p-12 bg-white border-2 border-verde-200 shadow-xl">
+        <Card className="p-8 md:p-12 bg-white border-4 border-verde-300 shadow-2xl">
           <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-verde-800 mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               Método Casa Viva - Plantas para Todos
             </h3>
             
-            <div className="bg-terracota-50 border border-terracota-200 rounded-2xl p-6 mb-8">
-              <div className="text-natural-600 text-lg mb-2">Investimento simbólico:</div>
-              <div className="text-5xl md:text-6xl font-bold text-terracota-600 mb-4">
+            <div className="bg-terracota-50 border-4 border-terracota-200 rounded-2xl p-8 mb-8">
+              <div className="text-gray-600 text-lg mb-2">De R$ 47,00 por apenas:</div>
+              <div className="text-6xl md:text-7xl font-bold text-terracota-600 mb-4">
                 R$ 9,90
               </div>
-              <div className="text-natural-600">
+              <div className="text-gray-600 text-lg">
                 Menos que um lanche no shopping!
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {diferenciais.map((diferencial, index) => (
-                <div key={index} className="flex items-center gap-3 text-left">
+                <div key={index} className="flex items-center gap-3 text-left bg-verde-50 p-3 rounded-lg">
                   <CheckCircle className="w-5 h-5 text-verde-600 flex-shrink-0" />
-                  <span className="text-natural-700">{diferencial}</span>
+                  <span className="text-gray-700 font-medium">{diferencial}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4 items-center justify-center mb-8">
-              <div className="flex items-center gap-2 text-verde-700">
-                <Clock className="w-5 h-5" />
-                <span>Acesso imediato</span>
-              </div>
-              <div className="flex items-center gap-2 text-verde-700">
-                <Shield className="w-5 h-5" />
-                <span>Compra 100% segura</span>
-              </div>
-              <div className="flex items-center gap-2 text-verde-700">
-                <Star className="w-5 h-5" />
-                <span>Satisfação garantida</span>
-              </div>
+            <div className="space-y-4 mb-8">
+              <Button 
+                className="bg-terracota-500 hover:bg-terracota-600 text-white px-12 py-6 text-2xl font-bold rounded-full shadow-xl transform hover:scale-105 transition-all duration-200 w-full"
+                size="lg"
+              >
+                Quero transformar minha casa agora
+              </Button>
             </div>
 
-            <div className="space-y-4">
-              <Button 
-                className="bg-terracota-500 hover:bg-terracota-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 w-full md:w-auto"
-                size="lg"
-              >
-                Quero minhas plantas vivas
-              </Button>
-              
-              <Button 
-                variant="outline"
-                className="border-verde-300 text-verde-700 hover:bg-verde-50 px-12 py-6 text-xl font-semibold rounded-full w-full md:w-auto"
-                size="lg"
-              >
-                Começar agora
-              </Button>
+            <div className="flex flex-col md:flex-row gap-4 items-center justify-center mb-8 text-sm">
+              <div className="flex items-center gap-2 text-verde-700">
+                <span className="text-lg">🔒</span>
+                <span className="font-medium">Pagamento seguro</span>
+              </div>
+              <div className="flex items-center gap-2 text-verde-700">
+                <span className="text-lg">📩</span>
+                <span className="font-medium">Acesso imediato</span>
+              </div>
+              <div className="flex items-center gap-2 text-verde-700">
+                <span className="text-lg">💚</span>
+                <span className="font-medium">Garantia de 7 dias</span>
+              </div>
             </div>
           </div>
 
-          <div className="border-t border-natural-200 pt-8">
-            <div className="bg-natural-50 rounded-xl p-6 text-center">
-              <h4 className="font-semibold text-verde-800 mb-2">
-                ⏰ Oferta por tempo limitado
+          <div className="border-t-2 border-natural-200 pt-8">
+            <div className="bg-gradient-to-r from-terracota-50 to-verde-50 rounded-xl p-6 text-center border-2 border-terracota-200">
+              <h4 className="font-bold text-gray-800 mb-2 text-lg">
+                ⚠️ ATENÇÃO: Depois de 200 alunos, o valor será reajustado para R$ 47,00
               </h4>
-              <p className="text-natural-600 text-sm">
-                Milhares de pessoas já transformaram suas casas. 
-                <br />
-                <strong>Sua vez chegou!</strong>
+              <p className="text-gray-600">
+                <strong>Não perca esta chance única!</strong> Sua transformação começa agora.
               </p>
             </div>
           </div>
         </Card>
-
-        <div className="text-center mt-8">
-          <p className="text-natural-600 text-sm">
-            🔒 Pagamento 100% seguro • 📱 Acesso imediato • 🌱 Transformação garantida
-          </p>
-        </div>
       </div>
     </section>
   );
