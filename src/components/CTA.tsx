@@ -66,10 +66,10 @@ export const CTA = () => {
             <div className="space-y-4 mb-6 sm:mb-8">
               <Button 
                 onClick={handleCheckout}
-                className="bg-terracota-500 hover:bg-terracota-600 text-white px-6 sm:px-12 py-4 sm:py-6 text-lg sm:text-2xl font-bold rounded-full shadow-xl transform hover:scale-105 transition-all duration-200 w-full"
+                className="bg-terracota-500 hover:bg-terracota-600 text-white px-4 sm:px-8 py-3 sm:py-5 text-base sm:text-xl font-bold rounded-full shadow-xl transform hover:scale-105 transition-all duration-200 w-full"
                 size="lg"
               >
-                <span className="leading-tight">Quero transformar minha casa agora</span>
+                <span className="leading-tight text-center break-words">Quero transformar minha casa agora</span>
               </Button>
             </div>
 
