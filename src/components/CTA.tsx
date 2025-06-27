@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Clock, Shield, Star } from "lucide-react";
+import { safeExternalRedirect, logSecurityEvent } from "@/utils/security";
 
 export const CTA = () => {
   const diferenciais = [
@@ -11,8 +11,11 @@ export const CTA = () => {
     "Resultados em até 30 dias"
   ];
 
+  const CHECKOUT_URL = 'https://www.ggcheckout.com/checkout/v2/Cz1YbICfOE3Wi8XjsraU';
+
   const handleCheckout = () => {
-    window.open('https://www.ggcheckout.com/checkout/v2/Cz1YbICfOE3Wi8XjsraU', '_blank');
+    logSecurityEvent('Checkout button clicked', { url: CHECKOUT_URL });
+    safeExternalRedirect(CHECKOUT_URL);
   };
 
   return (

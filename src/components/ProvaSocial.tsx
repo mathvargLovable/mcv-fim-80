@@ -1,6 +1,8 @@
+
 import { Card } from "@/components/ui/card";
 import { Quote, Star } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { SecureImage } from "./SecureImage";
 
 export const ProvaSocial = () => {
   const depoimentos = [
@@ -91,7 +93,11 @@ export const ProvaSocial = () => {
               <div className="border-t border-natural-200 pt-4">
                 <div className="flex items-center gap-3 mb-2">
                   <Avatar className="w-12 h-12">
-                    <AvatarImage src={depoimento.foto} alt={depoimento.nome} />
+                    <AvatarImage 
+                      src={depoimento.foto} 
+                      alt={`Foto de ${depoimento.nome}`}
+                      referrerPolicy="no-referrer"
+                    />
                     <AvatarFallback className="bg-verde-100 text-verde-700 font-bold">
                       {depoimento.nome.split(' ').map(n => n[0]).join('')}
                     </AvatarFallback>
