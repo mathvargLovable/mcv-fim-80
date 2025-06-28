@@ -34,7 +34,7 @@ export const FloatingCTA = () => {
         className="w-full bg-terracota-500 hover:bg-terracota-600 text-white font-bold py-3 sm:py-4 rounded-full shadow-2xl animate-pulse text-sm sm:text-base"
         size="lg"
       >
-        <span className="leading-tight">🌿 Quero minhas plantas vivas - R$ 9,90</span>
+        <span className="leading-tight">🌿 Comece agora por apenas R$ 9,90</span>
       </Button>
     </div>
   );

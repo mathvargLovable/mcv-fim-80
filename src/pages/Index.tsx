@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero';
 import { ParaQuemE } from '../components/ParaQuemE';
 import { Beneficios } from '../components/Beneficios';
 import { OQueVaiAprender } from '../components/OQueVaiAprender';
+import { ImagineTransformacao } from '../components/ImagineTransformacao';
 import { ProvaSocial } from '../components/ProvaSocial';
 import { Galeria } from '../components/Galeria';
 import { FAQ } from '../components/FAQ';
@@ -17,6 +18,7 @@ const Index = () => {
       <ParaQuemE />
       <Beneficios />
       <OQueVaiAprender />
+      <ImagineTransformacao />
       <ProvaSocial />
       <Galeria />
       <FAQ />

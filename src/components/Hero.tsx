@@ -62,14 +62,20 @@ export const Hero = () => {
 
         {/* Call to Action */}
         <div className="space-y-4 sm:space-y-6 px-4">
-          <Button 
-            onClick={scrollToOffer}
-            size="lg" 
-            className="bg-terracota-500 hover:bg-terracota-600 text-white font-bold text-base sm:text-xl px-6 sm:px-12 py-4 sm:py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-          >
-            <Heart className="w-4 sm:w-6 h-4 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" />
-            <span className="leading-tight">Quero minhas plantas vivas</span>
-          </Button>
+          <div className="space-y-3">
+            <Button 
+              onClick={scrollToOffer}
+              size="lg" 
+              className="bg-terracota-500 hover:bg-terracota-600 text-white font-bold text-base sm:text-xl px-6 sm:px-12 py-4 sm:py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+            >
+              <Heart className="w-4 sm:w-6 h-4 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" />
+              <span className="leading-tight">Comece agora por apenas R$ 9,90</span>
+            </Button>
+            
+            <p className="text-sm sm:text-base text-gray-600 font-medium">
+              Acesso imediato. Sem complicação.
+            </p>
+          </div>
           
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-3 sm:p-4 border border-green-200/50 max-w-2xl mx-auto">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600">

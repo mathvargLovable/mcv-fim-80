@@ -49,8 +49,12 @@ export const CTA = () => {
               <div className="text-4xl sm:text-6xl md:text-7xl font-bold text-terracota-600 mb-3 sm:mb-4">
                 R$ 9,90
               </div>
-              <div className="text-gray-600 text-base sm:text-lg">
-                Menos que um lanche no shopping!
+              <div className="text-gray-600 text-base sm:text-lg mb-3">
+                <div className="flex items-center justify-center gap-2 flex-wrap">
+                  <span>Menos que um lanche no shopping</span>
+                  <span className="text-xl">🍔</span>
+                  <span>– invista no bem-estar da sua casa.</span>
+                </div>
               </div>
             </div>
 
@@ -73,31 +77,55 @@ export const CTA = () => {
               </Button>
             </div>
 
+            {/* Selos de Confiança */}
             <div className="flex flex-col gap-2 sm:gap-4 items-center justify-center mb-6 sm:mb-8 text-xs sm:text-sm">
-              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center justify-center">
                 <div className="flex items-center gap-2 text-verde-700">
                   <span className="text-base sm:text-lg">🔒</span>
-                  <span className="font-medium">Pagamento seguro</span>
+                  <span className="font-medium">Compra segura</span>
                 </div>
                 <div className="flex items-center gap-2 text-verde-700">
-                  <span className="text-base sm:text-lg">📩</span>
+                  <span className="text-base sm:text-lg">📧</span>
                   <span className="font-medium">Acesso por e-mail</span>
                 </div>
                 <div className="flex items-center gap-2 text-verde-700">
                   <span className="text-base sm:text-lg">💚</span>
-                  <span className="font-medium">Garantia de 7 dias</span>
+                  <span className="font-medium">Suporte por WhatsApp</span>
                 </div>
               </div>
+            </div>
+
+            {/* Garantia Reforçada */}
+            <div className="bg-gradient-to-r from-verde-50 to-terracota-50 rounded-xl p-4 sm:p-6 mb-6 border-2 border-verde-200">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <Shield className="w-6 h-6 text-verde-600" />
+                <h4 className="font-bold text-gray-800 text-lg sm:text-xl">
+                  ✅ Garantia incondicional de 30 dias
+                </h4>
+              </div>
+              <p className="text-gray-600 text-sm sm:text-base">
+                <strong>ou seu dinheiro de volta.</strong> Experimente sem riscos!
+              </p>
             </div>
           </div>
 
           <div className="border-t-2 border-natural-200 pt-6 sm:pt-8">
-            <div className="bg-gradient-to-r from-terracota-50 to-verde-50 rounded-xl p-4 sm:p-6 text-center border-2 border-terracota-200">
+            <div className="bg-gradient-to-r from-terracota-50 to-verde-50 rounded-xl p-4 sm:p-6 text-center border-2 border-terracota-200 mb-6">
               <h4 className="font-bold text-gray-800 mb-2 text-base sm:text-lg">
                 ⚠️ ATENÇÃO: Depois de 200 alunos, o valor será reajustado para R$ 47,00
               </h4>
               <p className="text-gray-600 text-sm sm:text-base">
                 <strong>Não perca esta chance única!</strong> Sua transformação começa agora.
+              </p>
+            </div>
+
+            {/* Gatilho de Urgência */}
+            <div className="text-center bg-white rounded-xl p-4 sm:p-6 border-2 border-terracota-300 shadow-lg">
+              <p className="text-terracota-600 font-bold text-lg sm:text-xl mb-2">
+                ⏰ Oferta disponível por tempo limitado
+              </p>
+              <p className="text-gray-700 text-base sm:text-lg">
+                – garante seu acesso com valor simbólico hoje mesmo!
               </p>
             </div>
           </div>
